@@ -9,6 +9,8 @@ function handleVideoSpeedControllerScroll(e) {
 
   let playbackRate = getPlaybackRate(newHeight);
   bar.textContent = playbackRate.toFixed(1) + 'x';
+
+  video.playbackRate = playbackRate;
 }
 
 function getYCoord(e) {
